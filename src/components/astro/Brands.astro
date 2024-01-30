@@ -11,83 +11,113 @@ const text = "<Casos de éxito: Inspiración que transforma industrias>";
 ---
 
 <section class="px-6 py-10">
-    <aside>
-        <p
-            class="font-grotesk font-semibold leading-8 text-2xl text-left text-blue-king mb-4"
-        >
-            Únete a la lista exclusiva de empresarios que están creando el
-            futuro
-        </p>
-    </aside>
-    <aside>
-        <p class="font-pmono font-light text-left text-slate-600 text-base">
-            {text}
-        </p>
-    </aside>
-    <aside class="w-90% bg-solution rounded-md mt-8 mb-4 pb-6">
-        <aside class="py-6 px-5 flex">
-            <div class="basis-1/2">
-                <img
-                    src={eeSvg.src}
-                    alt="maccan"
-                    width="100"
-                    class="absolute"
-                />
-            </div>
-            <div class="basis-1/2 flex justify-end">
-                <img src={mcCannSvg.src} alt="maccan" width="60" />
-            </div>
+    <aside class="mx-auto md:w-[90%] lg:w-[70%] xl:w-[60%]">
+        <aside>
+            <p
+                class="font-grotesk font-semibold leading-8 text-2xl text-left text-blue-king mb-4"
+            >
+                Únete a la lista exclusiva de empresarios que están creando el
+                futuro
+            </p>
         </aside>
         <aside>
-            <div class="text-slate-100 flex items-center">
-                <p class="px-2 text-header-lime">{"<"}</p>
-                <div class="text-xs px-1">
-                    <p class="mb-2">
-                        Xpand Group se ha convertido en un gran socio
-                        estratégico para el desarrollo de soluciones
-                        tecnológicas para nuestros clientes, han demostrado
-                        grandes capacidades de ejecución.
-                    </p>
-                    <p class="font-pmono text-header-lime">
-                        {"<Mario Benavente>"}
-                    </p>
-                    <p class="font-pmono text-header-lime">
-                        {" <Gerente general McCann Ecuador>"}
-                    </p>
-                </div>
-                <p class="px-2 text-header-lime">{">"}</p>
-            </div>
+            <p class="font-pmono font-light text-left text-slate-600 text-base">
+                {text}
+            </p>
         </aside>
-    </aside>
-    <aside>
-        <aside class="flex mb-8">
-            <aside
-                class="bg-solution basis-1/4 rounded-md mx-1 py-2 px-1 flex justify-center items-center"
-            >
-                <img src={liliPinkSvg.src} alt="lili" width="50" />
-            </aside>
-            <aside
-                class="bg-solution basis-1/4 rounded-md mx-1 py-2 px-1 flex justify-center items-center"
-            >
-                <img src={nikeSvg.src} alt="nikeSvg" width="50" />
-            </aside>
-            <aside
-                class="bg-solution basis-1/4 rounded-md mx-1 py-2 px-1 flex justify-center items-center"
-            >
-                <img src={yamahaSvg.src} alt="yamahaSvg" width="50" />
-            </aside>
-            <aside
-                class="bg-solution basis-1/4 rounded-md mx-1 py-2 px-1 flex justify-center items-center"
-            >
-                <img src={conalturaSvg.src} alt="conalturaSvg" width="30" />
-            </aside>
-        </aside>
-    </aside>
-    <aside>
-        <p
-            class="font-grotesk font-light italic text-base text-center text-slate-100 rounded-full bg-blue-king py-3 shadow-md "
+        <aside
+            class="w-90% sm:w-[70%] md:w-[65%] sm:mx-auto bg-solution rounded-md mt-8 mb-4 pb-6"
         >
-        Transforma tu futuro hoy, agenda ya  >
-        </p>
+            <aside class="py-6 px-5 flex">
+                <div class="basis-1/2">
+                    <img
+                        src={eeSvg.src}
+                        alt="maccan"
+                        width="100"
+                        class="absolute"
+                    />
+                </div>
+                <div class="basis-1/2 flex justify-end">
+                    <img
+                        src={mcCannSvg.src}
+                        alt="maccan"
+                        class="w-[60px] sm:w-[90px]"
+                    />
+                </div>
+            </aside>
+            <aside>
+                <div
+                    class="text-slate-100 text-xs sm:text-base flex items-center"
+                >
+                    <p class="px-2 text-header-lime">{"<"}</p>
+                    <div class="px-1">
+                        <p class="mb-2">
+                            Xpand Group se ha convertido en un gran socio
+                            estratégico para el desarrollo de soluciones
+                            tecnológicas para nuestros clientes, han demostrado
+                            grandes capacidades de ejecución.
+                        </p>
+                        <p class="font-pmono text-header-lime">
+                            {"<Mario Benavente>"}
+                        </p>
+                        <p class="font-pmono text-header-lime">
+                            {" <Gerente general McCann Ecuador>"}
+                        </p>
+                    </div>
+                    <p class="px-2 text-header-lime">{">"}</p>
+                </div>
+            </aside>
+        </aside>
+        <aside>
+            <aside class="md:w-[80%] md:mx-auto flex mb-8">
+                <aside class="basis-1/4 flex justify-center items-center">
+                    <aside
+                        class="bg-solution rounded-md mx-1 py-2 px-4 w-full sm:mx-4 sm:py-3 h-full flex self-center justify-center"
+                    >
+                        <img
+                            src={liliPinkSvg.src}
+                            alt="lili"
+                            class="w-[50px]"
+                        />
+                    </aside>
+                </aside>
+                <aside class="basis-1/4 flex justify-center items-center">
+                    <aside
+                        class="bg-solution rounded-md mx-1 py-2 px-4 w-full sm:mx-4 sm:py-3 h-full flex self-center justify-center"
+                    >
+                        <img src={nikeSvg.src} alt="nikeSvg" class="w-[50px]" />
+                    </aside>
+                </aside>
+                <aside class="basis-1/4 flex justify-center items-center">
+                    <aside
+                        class="bg-solution rounded-md mx-1 py-2 px-4 w-full sm:mx-4 sm:py-3 h-full flex self-center justify-center"
+                    >
+                        <img
+                            src={yamahaSvg.src}
+                            alt="yamahaSvg"
+                            class="w-[50px]"
+                        />
+                    </aside>
+                </aside>
+                <aside class="basis-1/4 flex justify-center items-center">
+                    <aside
+                        class="bg-solution rounded-md mx-1 py-2 px-4 w-full sm:mx-4 sm:py-3 h-full flex self-center justify-center"
+                    >
+                        <img
+                            src={conalturaSvg.src}
+                            alt="conalturaSvg"
+                            class="w-[30px]"
+                        />
+                    </aside>
+                </aside>
+            </aside>
+        </aside>
+        <aside>
+            <p
+                class="font-grotesk font-light italic text-base text-center text-slate-100 rounded-full bg-blue-king py-3 shadow-md sm:mx-auto sm:w-[70%] lg:w-[60%]"
+            >
+                Transforma tu futuro hoy, agenda ya >
+            </p>
+        </aside>
     </aside>
 </section>

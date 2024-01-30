@@ -2,27 +2,32 @@
 import geoSvg from "../../../public/img/geo.svg";
 ---
 
-<section class=" mx-2">
-    <aside class="pt-8 pb-4">
+<section class="mx-2 pb-3 sm:flex" >
+    <aside class="md:basis-1/2 pt-8 pb-4 ">
         <p class="font-pmono text-xl text-center">Emprede un viaje</p>
-        <img src={geoSvg.src} alt="geo" class="mx-3 my-4" />
+        <img src={geoSvg.src} alt="geo" class="mx-3 my-4 sm:max-h-96 sm:mx-auto lg:max-h-96 " />
         <p class="font-pmono text-xl text-center">
             de innovación y crecimiento
         </p>
     </aside>
-    <aside class="px-3">
-        <p class="font-grotesk font-semibold text-2xl text-blue-king pb-4">
-            Libera el potencial de tu negocio con nuestra experiencia en
-            tecnología
-        </p>
-        <p class="font-grotesk font-thin text-xl">
-            <span class="font-bold">En Xpand Group</span>, fusionamos creatividad, tecnología y estrategia para
-            forjar experiencias digitales sin presentes.
-        </p>
-    </aside>
-    <aside class="pt-6 pb-12">
-        <p class="font-grotesk italic font-thin text-base text-center text-slate-100 bg-blue-king rounded-full py-3 mx-2">
-            Transforma tu empresa con nosotros >
-        </p>
+    <aside class="sm:basis-1/2 sm:px-8 sm:self-center">
+        <aside class="px-3">
+            <p class="font-grotesk font-semibold text-2xl text-blue-king pb-4">
+                Libera el potencial de tu negocio con nuestra experiencia en
+                tecnología
+            </p>
+            <p class="font-grotesk font-thin text-xl">
+                <span class="font-bold">En Xpand Group</span>, fusionamos
+                creatividad, tecnología y estrategia para forjar experiencias
+                digitales sin presentes.
+            </p>
+        </aside>
+        <aside class="pt-6 pb-12">
+            <p
+                class="font-grotesk italic font-thin text-base text-center text-slate-100 bg-blue-king rounded-full py-3 mx-2"
+            >
+                Transforma tu empresa con nosotros >
+            </p>
+        </aside>
     </aside>
 </section>

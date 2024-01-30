@@ -5,10 +5,10 @@ export default function Footer() {
 
     return (
         <>
-            <section className='py-10 px-8'>
-                <aside className='mb-10'>
+            <section className='py-10 px-8 m-auto md:flex lg:w-[65%]'>
+                <aside className='md:basis-1/2 mb-10 self-center'>
                     <aside className='mb-10'>
-                        <p className="font-grotesk font-bold leading-8 text-3xl text-blue-king w-[85%]">
+                        <p className="font-grotesk font-bold leading-8 text-3xl text-blue-king md:mx-auto w-[85%]">
                             El futuro no sucede, nosotros lo creamos.
                         </p>
                     </aside>
@@ -20,7 +20,7 @@ export default function Footer() {
                         </button>
                     </aside>
                 </aside>
-                <aside>
+                <aside className='md:basis-1/2 md:px-8'>
                     <p className="font-grotesk text-xl text-custom-gray mb-8">
                         Políticas de privacidad
                     </p>

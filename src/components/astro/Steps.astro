@@ -6,32 +6,37 @@ import stepOneSvg from "../../../public/img/step-1.svg";
 import stepTwoSvg from "../../../public/img/step-2.svg";
 ---
 
-<section class="py-10 px-8 bg-header-blue">
-    <aside class="relative mb-10">
-        <img src={stepTitle.src} alt="stepTitle" class="w-full h-auto" />
-        <p
-            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-grotesk font-semibold leading-8 text-center text-2xl text-slate-100 w-4/5"
-        >
-            Da el primer paso hacía un futuro inigualable
-        </p>
-    </aside>
-    <aside class="mb-5">
-        <img src={stepOneSvg.src} alt="step_one" class="mx-auto" />
-    </aside>
-    <aside class="mb-10">
-        <img src={stepTwoSvg.src} alt="step_two" class="mx-auto" />
-    </aside>
-    <aside>
-        <aside class="mb-10">
+<section class="py-10 px-8 bg-header-blue ">
+    <aside class="sm:mx-auto sm:w-[85%] md:w-[75%] lg:w-[70%] xl:w-[60%]">
+        <aside class="relative mb-10 ">
+            <img src={stepTitle.src} alt="stepTitle" class="w-full h-auto sm:max-h-40" />
             <p
-                class="font-pmono text-center text-xl text-header-lime w-[90%] m-auto"
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-grotesk font-semibold leading-8 text-center text-2xl md:text-3xl lg:text-4xl text-slate-100 w-4/5"
             >
-                Ponte en contacto ahora, para una consultoría personalizada
-                gratuita
+                Da el primer paso hacía un futuro inigualable
             </p>
         </aside>
+        <aside class="mb-5 sm:mb-8 lg:mb-12">
+            <img src={stepOneSvg.src} alt="step_one" class="mx-auto lg:w-[70%] xl:w-[60%]" />
+        </aside>
+        <aside class="mb-10 sm:mb-8 lg:mb-12">
+            <img src={stepTwoSvg.src} alt="step_two" class="mx-auto lg:w-[70%] xl:w-[60%]" />
+        </aside>
         <aside>
-            <Button text="Programa tu consultoría personalizada >" class="w-full bg-blue-king"/>
+            <aside class="mb-10">
+                <p
+                    class="font-pmono text-center text-xl text-header-lime w-[90%] m-auto"
+                >
+                    Ponte en contacto ahora, para una consultoría personalizada
+                    gratuita
+                </p>
+            </aside>
+            <aside>
+                <Button
+                    text="Programa tu consultoría personalizada >"
+                    class="w-full bg-blue-king md:w-[70%] md:mx-auto md:block"
+                />
+            </aside>
         </aside>
     </aside>
 </section>

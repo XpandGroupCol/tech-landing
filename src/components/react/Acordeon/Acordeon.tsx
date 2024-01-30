@@ -24,7 +24,7 @@ function Acordeon(params: AcordeonData) {
                                     isActive
                                         ? lessSvg.src
                                         : plusSvg.src
-                                } alt="icon" width={16} className="inline" />
+                                } alt={params.imgName} width={16} className="inline" />
                             </span>
                             Ver </p>
                     </aside>
@@ -33,14 +33,14 @@ function Acordeon(params: AcordeonData) {
                     <aside className={`overflow-hidden transition-max-height duration-500 ease-in ${isActive ? 'max-h-[1000px]' : 'max-h-0'} `}>
                         <div className=''>
                             <aside className="w-3/5 mx-auto py-6">
-                                <img src={params.img.src} alt="item_img" />
+                                <img src={params.img} alt="item_img" className='mx-auto' />
                             </aside>
                             <p className="font-grotesk font-medium text-xl text-center text-slate-100">
                                 <span> {params.imgTitle} </span>
                             </p>
                             <p className="font-grotesk font-thin text-center text-slate-100">{params.imgDescription}</p>
                             <aside className="py-6">
-                                <p className="font-grotesk italic text-center rounded-full bg-header-lime py-3">
+                                <p className="font-grotesk italic text-center rounded-full bg-header-lime py-3 md:w-[80%] md:mx-auto lg:w-[70%] xl:w-[60%]">
                                     {params.btnDetail}
                                 </p>
                             </aside>

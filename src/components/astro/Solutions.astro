@@ -1,63 +1,75 @@
 ---
 import Acordeon from "../react/Acordeon/Acordeon";
-import acordeonImg from "../../../public/img/acordeon_img.png";
+// import acordeonImg from "../../../public/img/acordeon_img_1.png";
 import type { AcordeonData } from "../react/Acordeon/Acordeon.interfaces";
 
 const items: AcordeonData[] = [
     {
         title: "Desarrollo de apps móviles",
-        img: acordeonImg,
-        imgTitle: "Conecta con el Mundo:",
-        imgDescription: "<Tu App Móvil, Tu Huella Digital>",
+
         btnDetail: "Cotizar proyecto > ",
+        imgTitle: "<Conecta con el Mundo: ",
+        imgDescription: "Tu App Móvil, Tu Huella Digital > ",
+        imgName: "acordeon_img_1",
     },
     {
         title: "Desarrollo de web y web apps",
-        img: acordeonImg,
-        imgTitle: "Conecta con el Mundo:",
-        imgDescription: "<Tu App Móvil, Tu Huella Digital>",
+        imgTitle: "<Transforma Tu Modelo de Negocio",
+        imgDescription: "y Llévalo a Otro Nivel en Entornos Digitales > ",
+
         btnDetail: "Cotizar proyecto > ",
+
+        imgName: "acordeon_img_2",
     },
     {
         title: "Desarrollo de software a la medida",
-        img: acordeonImg,
-        imgTitle: "Conecta con el Mundo:",
-        imgDescription: "<Tu App Móvil, Tu Huella Digital>",
+        imgTitle: "<Dale Vida A Tus ideas ",
+        imgDescription: "Con Soluciones Únicas para Necesidades Únicas > ",
         btnDetail: "Cotizar proyecto > ",
+
+        imgName: "acordeon_img_3",
     },
     {
         title: "Desarrollo de eCommerce",
-        img: acordeonImg,
-        imgTitle: "Conecta con el Mundo:",
-        imgDescription: "<Tu App Móvil, Tu Huella Digital>",
+
         btnDetail: "Cotizar proyecto > ",
+        imgTitle: "<Aumenta Tu Experiencia de Cliente",
+        imgDescription: "Con Una Tienda Abierta al Mundo 24/7 > ",
+
+        imgName: "acordeon_img_4",
     },
     {
         title: "Consultoría de datos",
-        img: acordeonImg,
-        imgTitle: "Conecta con el Mundo:",
-        imgDescription: "<Tu App Móvil, Tu Huella Digital>",
+
         btnDetail: "Cotizar proyecto > ",
+        imgTitle: "< Desbloquea el Poder de tus Datos",
+        imgDescription:
+            "Estrategias de Análisis que Cambian el Juego y Catapultarán tu crecimiento > ",
+        imgName: "acordeon_img_5",
     },
     {
         title: "Consultoría en I.A",
-        img: acordeonImg,
-        imgTitle: "Conecta con el Mundo:",
-        imgDescription: "<Tu App Móvil, Tu Huella Digital>",
+
         btnDetail: "Cotizar proyecto > ",
+        imgTitle: "<Adelántate al Futuro:",
+        imgDescription: "Soluciones de IA que Reescriben las Reglas > ",
+        imgName: "acordeon_img_6",
     },
     {
         title: "Internet of things (Iot)",
-        img: acordeonImg,
-        imgTitle: "Conecta con el Mundo:",
-        imgDescription: "<Tu App Móvil, Tu Huella Digital>",
         btnDetail: "Cotizar proyecto > ",
+        imgTitle: "<Conectividad Sin Límites: ",
+        imgDescription:
+            "Soluciones IoT que Revolucionan Cada Aspecto de tu Negocio y Te Conectan con el Futuro> ",
+        imgName: "acordeon_img_7",
     },
 ];
+
+items.map((item) => (item.img = `../../../public/img/${item.imgName}.png`));
 ---
 
-<section class="bg-solution">
-    <aside class="py-8 mx-4">
+<section class="bg-solution ">
+    <aside class="py-8 mx-4 sm:w-[65%] sm:mx-auto 2xl:w-[55%]">
         <p
             class="font-grotesk font-semibold text-2xl leading-6 text-slate-100 w-[85%] mb-9"
         >
@@ -70,9 +82,10 @@ const items: AcordeonData[] = [
                     client:visible
                     title={item.title}
                     img={item.img}
+                    imgName={item.imgName}
+                    btnDetail={item.btnDetail}
                     imgTitle={item.imgTitle}
                     imgDescription={item.imgDescription}
-                    btnDetail={item.btnDetail}
                 />
             ))
         }
@@ -80,7 +93,7 @@ const items: AcordeonData[] = [
         <hr class="border-1 border-header-lime my-4" />
         <aside class="py-6">
             <p
-                class="font-grotesk italic text-center rounded-full bg-header-lime py-3 shadow-md"
+                class="font-grotesk italic text-center rounded-full bg-header-lime py-3 shadow-md md:w-[80%] md:mx-auto lg:w-[70%] xl:w-[60%]"
             >
                 Descubre lo que Xpand tiene para ti >
             </p>

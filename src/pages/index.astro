@@ -4,11 +4,14 @@ import Start from "../components/astro/Start.astro";
 import Solutions from "../components/astro/Solutions.astro";
 import Brands from "../components/astro/Brands.astro";
 import Steps from "../components/astro/Steps.astro";
+import DialogForm from "../components/react/DialogForm/DialogForm";
 ---
 
 <Layout>
+	<DialogForm client:load/>
 	<Start />
 	<Solutions />
 	<Brands />
 	<Steps />
 </Layout>
+../components/react/DialogForm/DialogForm

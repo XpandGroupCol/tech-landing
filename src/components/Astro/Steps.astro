@@ -1,0 +1,37 @@
+---
+import Button from "./Button.astro";
+
+import stepTitle from "../../../public/img/step-title.svg";
+import stepOneSvg from "../../../public/img/step-1.svg";
+import stepTwoSvg from "../../../public/img/step-2.svg";
+---
+
+<section class="py-10 px-8 bg-header-blue">
+    <aside class="relative mb-10">
+        <img src={stepTitle.src} alt="stepTitle" class="w-full h-auto" />
+        <p
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-grotesk font-semibold leading-8 text-center text-2xl text-slate-100 w-4/5"
+        >
+            Da el primer paso hacía un futuro inigualable
+        </p>
+    </aside>
+    <aside class="mb-5">
+        <img src={stepOneSvg.src} alt="step_one" class="mx-auto" />
+    </aside>
+    <aside class="mb-10">
+        <img src={stepTwoSvg.src} alt="step_two" class="mx-auto" />
+    </aside>
+    <aside>
+        <aside class="mb-10">
+            <p
+                class="font-pmono text-center text-xl text-header-lime w-[90%] m-auto"
+            >
+                Ponte en contacto ahora, para una consultoría personalizada
+                gratuita
+            </p>
+        </aside>
+        <aside>
+            <Button text="Programa tu consultoría personalizada >" class="w-full bg-blue-king"/>
+        </aside>
+    </aside>
+</section>

@@ -30,7 +30,7 @@ function Acordeon(params: AcordeonData) {
                     </aside>
                 </aside>
                 <aside>
-                    <aside className={`overflow-hidden transition-max-height duration-500 ease-in ${isActive ? 'max-h-96' : 'max-h-0'} `}>
+                    <aside className={`overflow-hidden transition-max-height duration-500 ease-in ${isActive ? 'max-h-[1000px]' : 'max-h-0'} `}>
                         <div className=''>
                             <aside className="w-3/5 mx-auto py-6">
                                 <img src={params.img.src} alt="item_img" />

@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../astro/Button.astro';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()
@@ -30,7 +29,7 @@ export default function Footer() {
                     </p>
                     <p className="font-grotesk text-xl text-custom-gray mb-8">Ayuda</p>
 
-                    <img src="/img/social.svg" alt="social" className='w-[80px] mb-2' />
+                    <img src="/landing-tech/img/social.svg" alt="social" className='w-[80px] mb-2' />
                     <p className="font-grotesk text-lg text-custom-gray mb-8">© Xpand Tech. {currentYear} All rights reserved.</p>
                 </aside>
             </section>

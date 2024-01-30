@@ -1,0 +1,12 @@
+---
+interface Props {
+    class: string;
+    text: string;
+}
+---
+
+<button
+    class={`font-grotesk font-light italic text-base text-center text-slate-100 rounded-full ${Astro.props.class} py-3 shadow-md `}
+>
+    {Astro.props.text}
+</button>

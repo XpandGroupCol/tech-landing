@@ -25,14 +25,14 @@ export default function DialogForm({ showDialog }) {
 
     const closeDialog = () => {
         setCurScreen(1)
-        console.log(isDialogOpen)
+        // console.log(isDialogOpen)
         setIsDialogOpen(false)
         setTextButton("Siguiente")
         showDialog(false)
     }
 
     const onChange = (e) => {
-        console.log(e.target.name, e.target.value)
+        // console.log(e.target.name, e.target.value)
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
@@ -94,7 +94,7 @@ export default function DialogForm({ showDialog }) {
 
     const createLead = async () => {
         const { data } = await axios.post(import.meta.env.PUBLIC_APP_ENDPOINT + '/lead', formData)
-        console.log(data)
+        // console.log(data)
         setMensaje(data?.msj)
     }
 

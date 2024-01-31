@@ -10,31 +10,31 @@ interface SliderContent {
 export default function Slider() {
     const contents: SliderContent[] = [
         {
-            imgPath: "/tech-landing/img/mccann.svg",
+            imgPath: "/img/mccann.svg",
             quote: "Xpand Group se ha convertido en un gran socio estratégico para el desarrollo de soluciones tecnológicas para nuestros clientes, han demostrado grandes capacidades de ejecución.",
             autor: "Mario Benavente",
             charge: "Gerente General McCann Ecuador"
         },
         {
-            imgPath: "/tech-landing/img/liliPink.svg",
+            imgPath: "/img/liliPink.svg",
             quote: "Nuestra estrategia de eCommerce con Xpand multiplicó nuestro alcance y ventas en este canal.",
             autor: "Nataly Bustos",
             charge: "Directora eCommerce"
         },
         {
-            imgPath: "/tech-landing/img/nike.svg",
+            imgPath: "/img/nike.svg",
             quote: "La innovación y agilidad en desarrollos personalizados realizados por el equipo de Xpand Group llevó nuestra interacción con los clientes a otro nivel, ahora estamos listos para un paso más grande.",
             autor: "Gaby Padrón",
             charge: "Brand Manager Latin America Nike"
         },
         {
-            imgPath: "/tech-landing/img/yamaha.svg",
+            imgPath: "/img/yamaha.svg",
             quote: "Nuestra estrategia de eCommerce con Xpand multiplicó nuestro alcance y ventas en este canal.",
             autor: "Nataly Bustos ",
             charge: "Directora eCommerce"
         },
         {
-            imgPath: "/tech-landing/img/conaltura.svg",
+            imgPath: "/img/conaltura.svg",
             quote: "Xpand transformó nuestra visión inmobiliaria en una experiencia digital única.",
             autor: " Erick Sánchez",
             charge: "Gerente de Mercadeo"
@@ -85,7 +85,7 @@ export default function Slider() {
                     <aside className="py-6 px-5 flex">
                         <div className="basis-1/2">
                             <img
-                                src="/tech-landing/img/ee.svg"
+                                src="/img/ee.svg"
                                 alt="maccan"
                                 width="100"
                                 className="absolute"

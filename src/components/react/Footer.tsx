@@ -29,7 +29,7 @@ export default function Footer() {
                     </p>
                     <p className="font-grotesk text-xl text-custom-gray mb-8">Ayuda</p>
 
-                    <img src="/tech-landing/img/social.svg" alt="social" className='w-[80px] mb-2' />
+                    <img src="/img/social.svg" alt="social" className='w-[80px] mb-2' />
                     <p className="font-grotesk text-lg text-custom-gray mb-8">© Xpand Tech. {currentYear} All rights reserved.</p>
                 </aside>
             </section>

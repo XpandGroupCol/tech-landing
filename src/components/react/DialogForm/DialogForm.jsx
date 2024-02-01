@@ -13,8 +13,8 @@ export default function DialogForm({ showDialog }) {
     const [errorMsj, setErrorMsj] = useState("")
     const [mensaje, setMensaje] = useState("")
     const [formData, setFormData] = useState({
-        firstname: '',
-        lastname: '',
+        firstName: '',
+        lastName: '',
         email: '',
         phone: '',
         acct_name: '',
@@ -45,11 +45,11 @@ export default function DialogForm({ showDialog }) {
         } else {
             let isFormComplete = false
             if (curScreen === 1) {
-                if (formData.firstname.trim().length === 0) {
+                if (formData.firstName.trim().length === 0) {
                     setErrorMsj("El campo Nombre es obligatorio")
                     return
                 }
-                if (formData.lastname.trim().length === 0) {
+                if (formData.lastName.trim().length === 0) {
                     setErrorMsj("El campo Apellido es obligatorio")
                     return
                 } else
@@ -93,7 +93,22 @@ export default function DialogForm({ showDialog }) {
     }
 
     const createLead = async () => {
-        const { data } = await axios.post(import.meta.env.PUBLIC_APP_ENDPOINT + '/lead', formData)
+        const contact = {
+            ...formData,
+            fieldValues: [
+                {
+                    "field": "29",
+                    "value": formData.acct_name
+                },
+                {
+                    "field": "25",
+                    "value": formData.presupuesto_tech
+                }
+            ]
+        }
+        console.log(contact)
+
+        const { data } = await axios.post(import.meta.env.PUBLIC_APP_ENDPOINT + '/lead', contact)
         // console.log(data)
         setMensaje(data?.msj)
     }
